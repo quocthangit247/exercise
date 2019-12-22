@@ -1,0 +1,17 @@
+.order {
+  &__left {
+    background: $color-gray-1;
+    text-align: end;
+  }
+  &__right {
+    padding-top: 10px;
+    padding-left: 25px;
+  }
+  &__text {
+    margin: 15px 0px;
+    &--highlight {
+      color: $color-green-1;
+      font-weight: bold;
+    }
+  }
+}

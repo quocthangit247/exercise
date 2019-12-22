@@ -21,7 +21,9 @@ const epicMiddleware = createEpicMiddleware({
 const middleware = [routerMiddleware(history), epicMiddleware];
 
 declare global {
-  interface Window { __REDUX_DEVTOOLS_EXTENSION__: any; }
+  interface Window {
+    __REDUX_DEVTOOLS_EXTENSION__: any;
+  }
 }
 
 if (process.env.NODE_ENV === 'development') {

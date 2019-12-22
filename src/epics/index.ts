@@ -1,5 +1,5 @@
 import { combineEpics } from 'redux-observable';
-import HomepageEpic from '../components/homepage/HomepageEpic';
+import HomepageEpic from '../components/order/OrderEpic';
 
 const epics = [HomepageEpic];
 

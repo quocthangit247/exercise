@@ -1,0 +1,21 @@
+.title {
+  text-align: center;
+  padding: 20px 0px;
+  border-bottom: 1px solid $color-underline-1;
+
+  &__name {
+    font-size: 2.5rem;
+    margin: 0;
+  }
+
+  &__desc {
+    font-weight: normal;
+  }
+}
+
+.back-button {
+  padding: 5px 0;
+  border-bottom: 1px solid $color-underline-1;
+  color: #0000005e;
+  font-weight: bold;
+}

@@ -1,6 +1,6 @@
 import { combineReducers } from 'redux';
 import { connectRouter } from 'connected-react-router';
-import HomepageReducer from '../components/homepage/HomepageReducer';
+import HomepageReducer from '../components/order/OrderReducer';
 
 const reducers = [HomepageReducer];
 

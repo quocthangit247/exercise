@@ -4,8 +4,15 @@
     "module": "commonjs",
     "jsx": "react",
     "target": "es5",
-    "allowJs": true
+    "allowJs": true,
+    "baseUrl": "./",
+    "lib": ["es5", "es6", "dom"],
+    "sourceMap": true,
+    "noImplicitAny": false,
+    "strictNullChecks": false,
+    "allowSyntheticDefaultImports": true,
+    "typeRoots": ["./src/typings"]
   },
   "include": ["./src/**/*"],
-  "exclude": ["node_modules"]
+  "exclude": ["dist", "build", "node_modules"]
 }

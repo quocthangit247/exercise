@@ -20,7 +20,7 @@ module.exports = {
     filename: '[name].[hash].min.js',
   },
   resolve: {
-    extensions: ['.ts', '.tsx', '.js', '.json'],
+    extensions: ['.ts', '.tsx', '.js', '.json', '.gif', '.png', '.jpg', '.jpeg', '.svg'],
   },
   module: {
     rules: [
@@ -44,12 +44,47 @@ module.exports = {
         exclude: /node_modules/,
         use: extractCSS.extract(['css-loader', 'postcss-loader']),
       },
+      {
+        test: /\.(gif|png|jpe?g|svg)$/i,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: 'assets/[name].[ext]',
+            },
+          },
+          {
+            loader: 'image-webpack-loader',
+            options: {
+              mozjpeg: {
+                progressive: true,
+                quality: 65,
+              },
+              // optipng.enabled: false will disable optipng
+              optipng: {
+                enabled: false,
+              },
+              pngquant: {
+                quality: [0.65, 0.9],
+                speed: 4,
+              },
+              gifsicle: {
+                interlaced: false,
+              },
+              // the webp option will enable WEBP
+              webp: {
+                quality: 75,
+              },
+            },
+          },
+        ],
+      },
       { enforce: 'pre', test: /\.js$/, loader: 'source-map-loader' },
     ],
   },
   devServer: {
     inline: true,
-    open: true,
+    open: false,
     host: '127.0.0.1',
     port: 3000,
     hot: true,

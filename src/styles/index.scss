@@ -1,4 +1,9 @@
 @import './normalize';
 @import './variable';
 @import './breakpoint';
-@import '../components/homepage/homepage';
+@import './common';
+@import '../components/order/order';
+@import '../components/header/header';
+@import '../components/title/title';
+@import '../components/sidebar/sidebar';
+@import '../components/customTable/table';

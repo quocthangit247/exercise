@@ -2,7 +2,7 @@ import { combineEpics, ofType } from 'redux-observable';
 import { of } from 'rxjs';
 import { catchError, map, switchMap } from 'rxjs/operators';
 import { GET_DATA } from '../../store/actionTypes';
-import { getDataFail, getDataSuccess } from './HomepageActions';
+import { getDataFail, getDataSuccess } from './OrderActions';
 
 export const getDataEpic = (action$, store$, { getDataService }) => {
   return action$.pipe(
