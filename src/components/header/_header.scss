@@ -32,7 +32,10 @@
   }
 
   &__left {
-    text-align: end;
+    text-align: center;
+    @include desktop {
+      text-align: end;
+    }
   }
 
   &__info {

@@ -354,7 +354,11 @@ template {
   display: flex; }
 
 .header__left {
-  text-align: end; }
+  text-align: center; }
+
+@media screen and (min-width: 1024px) {
+  .header__left {
+    text-align: end; } }
 
 .header__info {
   width: 100px;

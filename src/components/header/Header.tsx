@@ -23,13 +23,13 @@ class Header extends React.Component {
     return (
       <header className="header">
         <Row className="no-padding no-margin">
-          <Col md="4" lg="4" xl="4" className="header__left">
+          <Col xs="12" sm="12" md="12" lg="4" xl="4" className="header__left">
             <NavbarBrand href="/">
               <img src={logo} className="header__logo" alt="404 Not Found" />
             </NavbarBrand>
           </Col>
-          <Col md="8" lg="8" xl="8" className="header__right">
-            <Navbar expand="md">
+          <Col xs="12" sm="12" md="12" lg="8" xl="8" className="header__right">
+            <Navbar expand="md" className="col-xs-12 col-sm-12 col-md-12">
               <Nav className="mr-auto" navbar>
                 {this.navBar.map(item => this.renderNavItem(item))}
               </Nav>
