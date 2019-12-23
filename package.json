@@ -42,6 +42,9 @@
     "@babel/preset-env": "^7.7.7",
     "@babel/preset-react": "^7.7.4",
     "@babel/preset-typescript": "^7.7.7",
+    "@fortawesome/fontawesome-svg-core": "^1.2.26",
+    "@fortawesome/free-solid-svg-icons": "^5.12.0",
+    "@fortawesome/react-fontawesome": "^0.1.8",
     "@types/enzyme": "^3.10.4",
     "@types/jest": "^24.0.24",
     "@types/react": "^16.9.16",
@@ -56,10 +59,13 @@
     "bootstrap": "^4.4.1",
     "concurrently": "^5.0.2",
     "css-loader": "^3.4.0",
+    "dayjs": "^1.8.18",
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.2",
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "file-loader": "^5.0.2",
     "html-webpack-plugin": "^3.2.0",
+    "image-webpack-loader": "^6.0.0",
     "jest": "^24.9.0",
     "jest-cli": "^24.9.0",
     "mini-css-extract-plugin": "^0.9.0",
@@ -78,12 +84,9 @@
     "tslint-config-airbnb": "5.11.2",
     "tslint-config-prettier": "1.18.0",
     "typescript": "^3.7.3",
-    "file-loader": "^5.0.2",
-    "image-webpack-loader":"^6.0.0",
     "webpack": "^4.41.4",
     "webpack-cli": "^3.3.10",
-    "webpack-dev-server": "^3.10.1",
-    "dayjs":"^1.8.18"
+    "webpack-dev-server": "^3.10.1"
   },
   "jest": {
     "setupFiles": [

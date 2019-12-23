@@ -6,9 +6,11 @@
   &__right {
     padding-top: 10px;
     padding-left: 25px;
+    margin-bottom: 30px;
   }
   &__text {
-    margin: 15px 0px;
+    margin-top: 15px;
+    margin-bottom: 5px;
     &--highlight {
       color: $color-green-1;
       font-weight: bold;

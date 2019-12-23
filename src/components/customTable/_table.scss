@@ -4,4 +4,42 @@
     background: $color-black-1;
     color: $color-white-1;
   }
+  & &__pagination {
+    text-align: end;
+    // padding: 0;
+  }
+  &__footer {
+    padding: 10px 0;
+  }
+  &__text {
+    color: $color-gray-3;
+  }
+}
+
+.customer {
+  &__level {
+    width: 30%;
+    border-radius: 10px;
+    text-align: center;
+    background: $color-gray-1;
+  }
+}
+
+.pagination {
+  display: inline-block;
+  a {
+    color: $color-black-1;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+  }
+  & &__active {
+    display: flex;
+    justify-content: center;
+    background: $color-black-1;
+    color: $color-white-1;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+  }
 }
