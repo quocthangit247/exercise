@@ -39,9 +39,10 @@ class Order extends React.Component<IProps, IState> {
           <Col md="4" lg="4" xl="4" className="order__left no-padding no-margin">
             <Sidebar />
           </Col>
-          <Col md="8" lg="8" xl="8" className="order__right no-padding no-margin">
+          <Col md="6" lg="6" xl="6" className="order__right no-padding no-margin">
             <div className="order__text">
-              You have <span className="order__text order__text--highlight">{data.length}</span> orders, waiting for you confirm
+              You have <span className="order__text order__text--highlight">{data.length}</span> orders, waiting for you
+              confirm
             </div>
             <CustomTable data={data} isLoading={isLoading} />
           </Col>
